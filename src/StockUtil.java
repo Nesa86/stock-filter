@@ -12,12 +12,16 @@ public class StockUtil {
 		return stockInfo -> stockInfo.price < price;
 	}
 
-	public static StockInfo pickHigh(final StockInfo stockInfo1,
-			final StockInfo stockInfo2) {
+	public static StockInfo pickHigh(final StockInfo stockInfo1, final StockInfo stockInfo2) {
 		return stockInfo1.price > stockInfo2.price ? stockInfo1 : stockInfo2;
 	}
 
 	static Map<String, Double> prices = new HashMap<String, Double>() {
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
 		{
 			put("AMD", 3.28);
 			put("HPQ", 35.92);
@@ -43,4 +47,6 @@ public class StockUtil {
 
 		}
 	};
+
 }
+// Copyright Nenad Dikic, 2019

@@ -8,7 +8,9 @@ public class StockInfo {
 		price = thePrice;
 	}
 
+	@Override
 	public String toString() {
 		return ticker + " " + price + ", ";
 	}
 }
+// Copyright Nenad Dikic, 2019

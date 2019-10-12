@@ -11,3 +11,4 @@ public class TimeIt {
 		}
 	}
 }
+// Copyright Nenad Dikic, 2019
